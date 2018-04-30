@@ -1,0 +1,10 @@
+import example.Person
+
+model {
+	Person person
+}
+
+json {
+	person g.render(person)
+    isDirty person.dirtyPropertyNames
+}
